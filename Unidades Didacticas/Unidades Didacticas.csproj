@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C2A48CB-1590-4C32-99E6-28D8E99B0052}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Unidades_Didacticas</RootNamespace>
+    <AssemblyName>Unidades Didacticas</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.6.6823.24527, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.6.6823.24527\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examen1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen1\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen1\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen1\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen1\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen1\Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen1\Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen1\Indice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen1\Indice.Designer.cs">
+      <DependentUpon>Indice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen2\compCronometro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Examen2\compCronometro.designer.cs">
+      <DependentUpon>compCronometro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen2\FormAct1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen2\FormAct1.designer.cs">
+      <DependentUpon>FormAct1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen2\FormAct3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen2\FormAct3.designer.cs">
+      <DependentUpon>FormAct3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen2\FormAct4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen2\FormAct4.designer.cs">
+      <DependentUpon>FormAct4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen2\FormAct4_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen2\FormAct4_2.designer.cs">
+      <DependentUpon>FormAct4_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen2\Indice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen2\Indice.designer.cs">
+      <DependentUpon>Indice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIndice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIndice.Designer.cs">
+      <DependentUpon>FormIndice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewXML.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListViewXML.Designer.cs">
+      <DependentUpon>ListViewXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelojAnalogico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RelojAnalogico.Designer.cs">
+      <DependentUpon>RelojAnalogico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelojDigital.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RelojDigital.Designer.cs">
+      <DependentUpon>RelojDigital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud10_pract1_form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud10_pract1_form1.Designer.cs">
+      <DependentUpon>ud10_pract1_form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud08_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud08_pract1.Designer.cs">
+      <DependentUpon>ud08_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud05_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud05_pract1.Designer.cs">
+      <DependentUpon>ud05_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud04_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud04_pract1.Designer.cs">
+      <DependentUpon>ud04_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud04_pract2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud04_pract2.Designer.cs">
+      <DependentUpon>ud04_pract2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud04_pract3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud04_pract3.Designer.cs">
+      <DependentUpon>ud04_pract3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ud06_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud06_pract1.Designer.cs">
+      <DependentUpon>ud06_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud06_pract2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud06_pract2.Designer.cs">
+      <DependentUpon>ud06_pract2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud07_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud07_pract1.Designer.cs">
+      <DependentUpon>ud07_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud09_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud09_pract1.Designer.cs">
+      <DependentUpon>ud09_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud09_pract2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud09_pract2.Designer.cs">
+      <DependentUpon>ud09_pract2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud09_pract3_opcional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud09_pract3_opcional.Designer.cs">
+      <DependentUpon>ud09_pract3_opcional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud10_pract1_form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud10_pract1_form2.Designer.cs">
+      <DependentUpon>ud10_pract1_form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud11_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud11_pract1.Designer.cs">
+      <DependentUpon>ud11_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud12_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud12_pract1.Designer.cs">
+      <DependentUpon>ud12_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud13_pract1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud13_pract1.Designer.cs">
+      <DependentUpon>ud13_pract1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ud13_pract2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ud13_pract2.Designer.cs">
+      <DependentUpon>ud13_pract2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Examen2\compCronometro.resx">
+      <DependentUpon>compCronometro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen2\FormAct1.resx">
+      <DependentUpon>FormAct1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen2\FormAct3.resx">
+      <DependentUpon>FormAct3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen2\FormAct4.resx">
+      <DependentUpon>FormAct4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen2\FormAct4_2.resx">
+      <DependentUpon>FormAct4_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen2\Indice.resx">
+      <DependentUpon>Indice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIndice.resx">
+      <DependentUpon>FormIndice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewXML.resx">
+      <DependentUpon>ListViewXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelojDigital.resx">
+      <DependentUpon>RelojDigital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud08_pract1.resx">
+      <DependentUpon>ud08_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud05_pract1.resx">
+      <DependentUpon>ud05_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud04_pract1.resx">
+      <DependentUpon>ud04_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud04_pract2.resx">
+      <DependentUpon>ud04_pract2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud04_pract3.resx">
+      <DependentUpon>ud04_pract3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ud06_pract1.resx">
+      <DependentUpon>ud06_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud06_pract2.resx">
+      <DependentUpon>ud06_pract2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud07_pract1.resx">
+      <DependentUpon>ud07_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud09_pract1.resx">
+      <DependentUpon>ud09_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud09_pract2.resx">
+      <DependentUpon>ud09_pract2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud09_pract3_opcional.resx">
+      <DependentUpon>ud09_pract3_opcional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud10_pract1_form1.resx">
+      <DependentUpon>ud10_pract1_form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud10_pract1_form2.resx">
+      <DependentUpon>ud10_pract1_form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud11_pract1.resx">
+      <DependentUpon>ud11_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud12_pract1.resx">
+      <DependentUpon>ud12_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud13_pract1.resx">
+      <DependentUpon>ud13_pract1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ud13_pract2.resx">
+      <DependentUpon>ud13_pract2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_iesxabia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IES num 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capturaBucleFor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capturaBucleWhile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\byVal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\byRef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pikachu_HGSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mewtwo_HGSS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyarados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magikarp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewtwo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lugia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rayquaza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venusaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcanine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blastoise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario_cape_running.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoshi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marioandyoshi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
